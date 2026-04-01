@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/Css/Estilos.css">
     <title>Prueba Modulo 3</title>
 </head>
 <body>
-    
+    <h1>Conversor de Monedas Nacional</h1>
+    <div class="card">
+        <h2>Pesos CLP</h2>
+        <input type="number" id="monto" placeholder="1000">
+
+        <select>
+            <option value="dolar">Dolor</option>
+            <option value="euro">Euro</option>
+        </select>
+
+        <button id="convertir">Buscar</button>
+
+        <p id="resultado">Resultado: $0</p>
+        <p id="error"></p>
+    </div>
+
+    <div class="grafico-container">
+        <canvas id="grafico"></canvas>
+    </div>
+
+    <script src="assets/Js/Script.js"></script>
 </body>
 </html>
