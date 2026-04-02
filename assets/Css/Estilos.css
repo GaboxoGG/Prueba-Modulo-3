@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #1c2a33, #0f1a21);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 40px;
+    border-bottom: 1px solid #3aa6b9;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.card {
+    background-color: #6c757d;
+    width: 320px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #3cb4c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2a9cab;
+}
+
+#grafico {
+  max-width: 900px;
+  height: 400px;
+}
+
+.grafico-container {
+  background: #e5e5e5;
+  margin: 40px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 5px;
+}
