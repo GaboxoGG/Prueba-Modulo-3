@@ -55,5 +55,21 @@ function renderGrafico(serie){
 }
 
 document.getElementById("convertir").addEventListener("click", async () => {
-    
-}
+    const monto = montoInput.value;
+    const moneda = monedaSelect.value;
+
+    if (!monto) {
+        error.innerText = "Ingrese un monto valido";
+        return;
+    }
+
+    const data = await obtenerDatos(moneda);
+    if (!data) return;
+
+    const valor = data.serie[0].valor;
+    const conversion = monto / valor;
+
+    resultado.innerText = `Resultado $${conversion.toFixed(2)}`;
+
+    renderGrafico(data.serie);
+});
